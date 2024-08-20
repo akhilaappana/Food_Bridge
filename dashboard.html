@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #be75d7;">Bridge</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="height: 100vh;">
+        <div class="main">
+            <h1>Dashboard</h1>
+            <img src="https://th.bing.com/th/id/OIP.2xBG3I4I52zpg-dNeXrWlgHaEE?rs=1&pid=ImgDetMain" alt="Sample Image" />
+            <div class="boxes">
+                <div class="box box1">
+                    <h2>Total Users</h2>
+                    <span id="totalUsers">0</span>
+                </div>
+                <div class="box box2">
+                    <h2>Feedbacks</h2>
+                    <span id="feedbacks">0</span>
+                </div>
+                <div class="box box3">
+                    <h2>Total Donates</h2>
+                    <span id="totalDonates">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulated dynamic data (replace with actual data fetching logic)
+        const data = {
+            totalUsers: 1500,
+            feedbacks: 78,
+            totalDonates: 245
+        };
+
+        // Update dashboard with dynamic data
+        document.getElementById('totalUsers').textContent = data.totalUsers;
+        document.getElementById('feedbacks').textContent = data.feedbacks;
+        document.getElementById('totalDonates').textContent = data.totalDonates;
+    </script>
+</body>
+</html>

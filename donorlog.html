@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Login</title>
+    <link rel="stylesheet" href="donorlog.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const username = form.elements.username.value;
+            const password = form.elements.password.value;
+            if (username !== "" && password !== "") {
+                alert("Login successful!");
+                window.location.href = "fooddonate.html";
+            } else {
+                alert("Invalid username or password. Redirecting to register page.");
+                window.location.href = '/donor';
+            }
+        }
+    </script>
+</head>
+<body>
+   
+    <div class="admin">
+        <form onsubmit="handleSubmit(event)">
+            <h2>Donor Login</h2>
+            <input type="text" name="username" placeholder="Username" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <input type="submit" value="Login" />
+            <p>You're not registered? <a href="donor.html">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>

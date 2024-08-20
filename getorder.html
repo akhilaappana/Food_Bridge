@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Order</title>
+<link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    /* CSS styles from getorder.css */
+    .getcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .containerget {
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #be75d7;">Bridge</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="getcontainer">
+    <div class="containerget">
+        <h1>Get Order</h1>
+        <button onclick="takeOrder()">Take Order</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript function from React component
+    function takeOrder() {
+        alert('Order taken successfully!');
+        window.location.href = 'first.html';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .form textarea {
+            width: 200px;
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .accordion-button {
+            background-color: #add8e6;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            width: 1200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .accordion-content {
+            width: 1200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        let isOpenOne = false;
+        let isOpenTwo = false;
+        let isOpenThree = false;
+
+        function toggleAccordionOne() {
+            isOpenOne = !isOpenOne;
+            document.getElementById("accordionOne").style.display = isOpenOne ? "block" : "none";
+        }
+
+        function toggleAccordionTwo() {
+            isOpenTwo = !isOpenTwo;
+            document.getElementById("accordionTwo").style.display = isOpenTwo ? "block" : "none";
+        }
+
+        function toggleAccordionThree() {
+            isOpenThree = !isOpenThree;
+            document.getElementById("accordionThree").style.display = isOpenThree ? "block" : "none";
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Successfully sent");
+            window.location.href = "first.html"; // Redirect to first.html
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #be75d7;">Bridge</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            const navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div style="margin-top: 20px; text-align: center;">
+        <div>
+            <h1 style="text-align: center; margin-top: 20px; color: black;">Contact Us</h1>
+            <div style="display: flex; justify-content: center;">
+                <div class="form" style="text-align: center;">
+                    <form class="form" onsubmit="handleSubmit(event)">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <button type="submit" name="send">Send</button>
+                    </form>
+                </div>
+            </div>
+            <h2 style="margin-bottom: 20px; color: black;">Help & FAQs</h2>
+            <div class="accordion" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <button class="accordion-button" type="button" onclick="toggleAccordionOne()">
+                    How to donate food?
+                </button>
+                <div id="accordionOne" class="accordion-content" style="display: none;">
+                    <p>1) Click on <a href="#">donate</a> in the home page</p>
+                    <p>2) Fill in the details</p>
+                    <p>3) Click on submit</p>
+                </div>
+                <button class="accordion-button" type="button" onclick="toggleAccordionTwo()">
+                    How will my donation be used?
+                </button>
+                <div id="accordionTwo" class="accordion-content" style="display: none;">
+                    <p style="color: black;">
+                        Your donation will be used to support our mission and the various programs and initiatives that we have in place. Your donation will help us to continue providing assistance and support to those in need. You can find more information about our programs and initiatives on our website. If you have any specific questions or concerns, please feel free to contact us.
+                    </p>
+                </div>
+                <button class="accordion-button" type="button" onclick="toggleAccordionThree()">
+                    What should I do if my food donation is near or past its expiration date?
+                </button>
+                <div id="accordionThree" class="accordion-content" style="display: none;">
+                    <p>
+                        We appreciate your willingness to donate, but to ensure the safety of our clients we can't accept food that is near or past its expiration date. We recommend checking expiration dates before making a donation or contact us for further guidance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

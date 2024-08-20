@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FOOD BRIDGE</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .title {
+            color: black;
+            font-size: 40px;
+        }
+
+        .content {
+            text-align: center;
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+
+        .content h1 {
+            color: black;
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 25px;
+            font-family: "Helvetica, sans-serif";
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #be75d7;">Bridge</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            const navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div>
+        <h1 class="title">
+            <center>"Welcome to FOOD BRIDGE"</center>
+        </h1>
+        <br />
+        <div class="content">
+            <h1>ABOUT US</h1>
+            <br />
+            <p>
+                FOOD BRIDGE is a student-led initiative dedicated to combating food waste and alleviating hunger in our
+                communities. With a passionate team of students, we're committed to making a meaningful impact by
+                redistributing surplus food from local businesses to those in need.
+                <br /><br />
+                Driven by our belief in the power of collective action, we strive to foster a culture of sustainability
+                and compassion. Through strategic partnerships and innovative solutions, we aim to ensure that no edible
+                food goes to waste while simultaneously addressing food insecurity.
+                <br /><br />
+                Our mission is simple yet impactful: to transform surplus into sustenance, waste into welfare, and
+                hunger into hope. By raising awareness, promoting education, and advocating for change, we're working
+                towards a future where everyone has access to nutritious food and where no one goes to bed hungry.
+                <br /><br />
+                Join us in our journey to create a world where every meal is a celebration of abundance and where no one
+                is left behind.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

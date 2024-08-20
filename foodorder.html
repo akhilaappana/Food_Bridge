@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .containerfood {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .foodselect {
+            width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .food-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .food-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: left;
+        }
+
+        h1, h2 {
+            color: black;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">Food <b style="color: #be75d7;">Bridge</b></div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="first.html">Home</a></li>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="containerfood">
+        <h1>Food Order</h1>
+        <p>Select Place:</p>
+        <select id="places" name="places" class="foodselect">
+            <option value="place1">Place 1</option>
+            <option value="place2">Place 2</option>
+            <option value="place3">Place 3</option>
+        </select>
+        <h2>Food Details</h2>
+        <div class="food-details">
+            <div class="food-item">
+                <strong>Food Item:</strong> Burger<br /><br />
+                <strong>Quantity:</strong> 2<br /><br />
+                <strong>Donor Name:</strong> John Doe<br /><br />
+                <strong>Phone Number:</strong> 123-456-7890<br /><br />
+                <button onclick="handleGetOrder()">Get Order</button>
+            </div>
+            <div class="food-item">
+                <strong>Food Item:</strong> Burger<br /><br />
+                <strong>Quantity:</strong> 2<br /><br />
+                <strong>Donor Name:</strong> John Doe<br /><br />
+                <strong>Phone Number:</strong> 123-456-7890<br /><br />
+                <button onclick="handleGetOrder()">Get Order</button>
+            </div>
+            <div class="food-item">
+                <strong>Food Item:</strong> Burger<br /><br />
+                <strong>Quantity:</strong> 2<br /><br />
+                <strong>Donor Name:</strong> John Doe<br /><br />
+                <strong>Phone Number:</strong> 123-456-7890<br /><br />
+                <button onclick="handleGetOrder()">Get Order</button>
+            </div>
+            <div class="food-item">
+                <strong>Food Item:</strong> Burger<br /><br />
+                <strong>Quantity:</strong> 2<br /><br />
+                <strong>Donor Name:</strong> John Doe<br /><br />
+                <strong>Phone Number:</strong> 123-456-7890<br /><br />
+                <button onclick="handleGetOrder()">Get Order</button>
+            </div>
+            <div class="food-item">
+                <strong>Food Item:</strong> Burger<br /><br />
+                <strong>Quantity:</strong> 2<br /><br />
+                <strong>Donor Name:</strong> John Doe<br /><br />
+                <strong>Phone Number:</strong> 123-456-7890<br /><br />
+                <button onclick="handleGetOrder()">Get Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleGetOrder() {
+            alert("Order has been received!");
+            window.location.href = 'getorder.html';
+        }
+    </script>
+</body>
+</html>

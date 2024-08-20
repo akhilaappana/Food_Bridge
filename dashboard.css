@@ -1,0 +1,55 @@
+/* dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(111, 180, 177), rgb(233, 92, 92));
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto; /* Center horizontally with auto margins */
+    padding: 20px;
+    background: linear-gradient( rgb(193, 105, 105),rgb(169, 230, 227));
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.box span {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}

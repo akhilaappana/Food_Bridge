@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+        background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+<body>
+<header>
+    <div class="logo">Food <b style="color: #06C167;">Donate</b></div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="first.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+<div class="profile">
+    <div class="profilebox">
+        <p class="headingline" style="text-align: left; font-size: 30px;">
+
+            Profile
+        </p>
+        
+        <div class="info" style="padding-left: 10px;">
+          <img src="girl.webp" alt="" style="width: 100px; height: 125px; padding-right: 10px; position: relative;">
+            <p>Name:Akhila</p>
+            <p>Email:akhila@gmail.com</p>
+            <p>Gender:Female</p>
+        </div>
+        
+        <p class="heading">Your donations</p>
+        <div class="table-container">
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Type</th>
+                            <th>Category</th>
+                            <th>Date/Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bread</td>
+                            <td>Grains</td>
+                            <td>Non-perishable</td>
+                            <td>2024-07-14 10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Apples</td>
+                            <td>Fruits</td>
+                            <td>Perishable</td>
+                            <td>2024-07-15 2:00 PM</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

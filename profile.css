@@ -1,0 +1,74 @@
+  /* profile.css */
+
+.profile {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.profilebox {
+  padding: 20px;
+}
+
+.headingline {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-color: #06C167;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #04a256;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}

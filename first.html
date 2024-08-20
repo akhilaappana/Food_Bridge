@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bridge</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #be75d7;;">Bridge</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#first" class="active">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="profile.html" >Profile</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <section class="banner">
+        <a href="welcome.html">DONAR</a>
+        <a href="admin.html">ADMIN</a>
+        <a href="user.html">RECEIVER</a><br>
+    </section>
+    <div class="content">
+        <center><p style="font-size: 23px;">
+            “Cutting food waste is a delicious way of saving money, helping to feed the world and protect the planet.” 
+        </p>
+    </center>
+       
+    </div>
+    <div class="photo">
+        <br>
+        <p class="heading">Our Works</p>
+        <br>
+        <p style="font-size: 28px; text-align: center;">"Look what we can do together."</p>
+       <br>
+        <div class="wrapper">
+          <div class="box"><img src="p1.webp" alt=""></div>
+          <div class="box"><img src="p2.jpeg" alt=""></div>
+          <div class="box"><img src="p3.jpg" alt=""></div>
+        </div>
+        
+        <br>
+    </div>
+    
+    
+
+    
+</body>
+</html>

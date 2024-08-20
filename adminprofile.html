@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <!--<img src="images/logo.png" alt="">-->
+            </div>
+
+            <span class="logo_name">ADMIN</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="admin.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-heart"></i>
+                    <span class="link-name">Donates</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Feedbacks</span>
+                </a></li>
+                <li><a href="adminprofile.html">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">Profile</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="welcome.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <p class="logo">Your <b style="color:#be75d7;">History</b></p>
+            <p class="user"></p>
+        </div>
+        
+        <div class="activity">
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Food</th>
+                                <th>Category</th>
+                                <th>Phone No</th>
+                                <th>Date/Time</th>
+                                <th>Address</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="name">John Doe</td>
+                                <td data-label="food">Pizza</td>
+                                <td data-label="category">Fast Food</td>
+                                <td data-label="phoneno">123-456-7890</td>
+                                <td data-label="date">2024-07-15 10:30 AM</td>
+                                <td data-label="Address">123 Main St, City</td>
+                                <td data-label="quantity">2</td>
+                            </tr>
+                            <!-- Add more static rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
